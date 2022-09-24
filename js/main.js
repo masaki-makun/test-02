@@ -1,3 +1,4 @@
 const list=[1,2,3];
-const target=list.reduce((sum, current, index)=>sum * current, 1);
-console.log(target);
+const obj={a:1,b:2,c:3};
+const objArr=Array.of(...list);
+console.log(Array.isArray(objArr));
