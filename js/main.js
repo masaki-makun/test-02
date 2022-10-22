@@ -1,4 +1,5 @@
-const list=[1,2,3];
-const obj={a:1,b:2,c:3};
-const objArr=Array.of(...list);
-console.log(Array.isArray(objArr));
+let arr=[1,2,3];
+let arr2=Array.from(arr);
+let arr3=Array.of(...arr);
+console.log(arr2);
+console.log(arr3);
