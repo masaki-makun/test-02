@@ -1,5 +1,3 @@
-let arr=[1,2,3];
-let arr2=Array.from(arr);
-let arr3=Array.of(...arr);
-console.log(arr2);
-console.log(arr3);
+const capitalize=str=>str.replace(/(^\w{1})|(\s+\w{1})/g,match=>match.toUpperCase());
+const result=capitalize("obake");
+console.log(result);
