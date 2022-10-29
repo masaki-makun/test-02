@@ -1,3 +1,29 @@
-const capitalize=str=>str.replace(/(^\w{1})|(\s+\w{1})/g,match=>match.toUpperCase());
-const result=capitalize("obake");
-console.log(result);
+const taskValue = document.querySelector(".task_value");
+const taskSubmit = document.querySelector(".task_submit");
+const taskList = document.querySelector(".task_list");
+
+const addTasks = (task) => {
+  const listItem = document.createElement("li");
+  const showItem = taskList.appendChild(listItem);
+  showItem.innerHTML = task;
+  const deleteButton=document.createElement("button");
+  deleteButton.innerHTML="Delete";
+  listItem.appendChild(deleteButton);
+  deleteButton.addEventListener("click",e=>{
+    e.preventDefault();
+    deleteTasks(deleteButton);
+  });
+};
+
+const deleteTasks=(deleteButton)=>{
+    const chosenTask=deleteButton.closest("li");
+    taskList.removeChild(chosenTask);
+};
+
+taskSubmit.addEventListener("click",e=>{
+    e.preventDefault();
+    const task=taskValue.value;
+    addTasks(task);
+    taskValue.value="";
+});
+
