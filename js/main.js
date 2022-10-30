@@ -27,3 +27,11 @@ taskSubmit.addEventListener("click",e=>{
     taskValue.value="";
 });
 
+
+
+const scrollToBottom=()=>{
+  document.documentElement.clientHeight+window.scrollY>=document.documentElement.scrollHeight;
+}
+console.log(scrollToBottom);
+
+
