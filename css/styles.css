@@ -29,3 +29,23 @@ li{
     display: flex;
     justify-content: space-between;
 }
+
+.scrollBtn{
+    width:80px;
+    height:30px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    outline:none;
+    cursor:pointer;
+    transition: all .3s ease;
+}
+.scrollBtn:hover{
+    opacity: .8;
+}
+
+.scrollWrapper{
+    height:1000px;
+    background-color: green;
+}
