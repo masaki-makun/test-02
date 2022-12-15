@@ -17,3 +17,26 @@ const animationButton = () => {
 };
 
 document.addEventListener("DOMContentLoaded", animationButton);
+
+
+
+
+
+
+// Swiper
+const sliderThumbnail = new Swiper(".slider-thumbnail", {
+  slidesPerView: 3,
+});
+
+const slider = new Swiper(".slider", {
+  loop: true,
+  // effect:"fade",
+  thumbs: {
+    swiper: sliderThumbnail,
+  },
+});
+
+
+
+
+
