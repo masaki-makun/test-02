@@ -35,3 +35,4 @@ const slider = new Swiper(".slider", {
     swiper: sliderThumbnail,
   },
 });
+
